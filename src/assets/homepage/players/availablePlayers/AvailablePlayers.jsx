@@ -7,7 +7,17 @@ const AvailablePlayers = ({ players }) => {
 
     return (
         <div>
-            <Card players={players}></Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {
+                    players.map(player => {
+                        console.log(player, 'player'); //individual player pabo 
+                        return(
+                            <Card player={player}></Card>
+                        )
+                    })
+                }
+            </div>
+            
         </div>
     );
 };
