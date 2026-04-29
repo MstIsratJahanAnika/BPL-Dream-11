@@ -7,23 +7,23 @@ import AvailablePlayers from "./availablePlayers/AvailablePlayers";
 import SelectedPlayers from "./selectedPlayers/SelectedPlayers";
 
 const Players = ({ playersPromise, setCoins, coins }) => {
-    console.log(playersPromise);
+    // console.log(playersPromise);
 
     const players = use(playersPromise);
-    console.log(players);
+    // console.log(players);
 
     const [selectedType, setSelectedType] = useState(true)
-    console.log(selectedType, 'selectedType');
+    // console.log(selectedType, 'selectedType');
 
     // selected payers ekhan theke handle hobe, all players theke e players selected hobe
     // all selected players ekta arry
     const[selectedPlayers, setSelectedPlayers] = useState([]);
-    
+
     return (
         <div className="container mx-auto my-10">
             {/* Players: {players.length} */}
             <div className="flex justify-between items-center my-10">
-                <h2 className="font-bold text-[28px]"> {selectedType ? "Available Players" : "Selected Players (0/6)"}</h2>
+                <h2 className="font-bold text-[28px]"> {selectedType ? "Available Players" : `Selected Players (${selectedPlayers.length}/${players.length})`}</h2>
 
                 {/* button toggling */}
                 <div>
@@ -36,7 +36,7 @@ const Players = ({ playersPromise, setCoins, coins }) => {
                     <button
                         onClick={() => setSelectedType(false)}
                         className={`btn ${!selectedType ? "bg-[#E7FE29]" : "bg-white"} rounded-l-none rounded-r-xl`}>
-                        Selected (0)
+                        Selected ({selectedPlayers.length})
                     </button>
                 </div>
             </div>
@@ -44,7 +44,10 @@ const Players = ({ playersPromise, setCoins, coins }) => {
             {/* eta conditional hobe */}
             {/* <AvailablePlayers players={players} /> */}
 
-            {selectedType ? <AvailablePlayers coins={coins} setCoins={setCoins} players={players} /> : <SelectedPlayers />}
+            {selectedType ? 
+            <AvailablePlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} 
+                coins={coins} setCoins={setCoins} players={players} /> : 
+            <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coins={coins} setCoins={setCoins}/>}
         </div>
     );
 };

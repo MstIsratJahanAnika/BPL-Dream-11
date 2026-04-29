@@ -4,8 +4,9 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { IoFlagSharp } from "react-icons/io5";
+import { toast } from "react-toastify";
 
-const Card = ({ player, setCoins, coins }) => {
+const Card = ({ player, setCoins, coins, selectedPlayers, setSelectedPlayers }) => { //ekhane egula props pathano
 
     const { 
         playerImg, 
@@ -18,7 +19,7 @@ const Card = ({ player, setCoins, coins }) => {
         price 
     } = player;
 
-    console.log(price);
+    // console.log(price);
     const handleChoosePlayer = () =>{
 
         // coin diye players kena or not enough coins
@@ -28,13 +29,16 @@ const Card = ({ player, setCoins, coins }) => {
             setCoins(newCoins);
         }
         else{
-            alert("Not enough coins to purchase this player");
+            toast.error("Not enough coins to purchase this player")
             return;
         }
-        alert(`${playerName} is selected`)
+        toast.success(`${playerName} is selected`)
 
         // isSelected false -> choose player dekhabe, !isSelected tahkle Selected dekhabe (state => true)
-        setIsSelected(!isSelected);
+        setIsSelected(true);
+
+        // ager player der shathe new player add
+        setSelectedPlayers([...selectedPlayers, player])
 
     }
 
