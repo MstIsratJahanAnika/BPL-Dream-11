@@ -6,7 +6,7 @@
     "rating": 9.8,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": 500,
+    "price": 500000,
     "playerImg": "https://i.ibb.co.com/39btyyvr/kohli.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "rating": 9.5,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1500,
+    "price": 75000,
     "playerImg": "https://i.ibb.co.com/ZpRMmXCM/babar-azam.webp"
   },
   {
@@ -26,7 +26,7 @@
     "rating": 9.3,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "price": 2500,
+    "price": 45000,
     "playerImg": "https://i.ibb.co.com/SXgDhzp7/stokesb011201-min.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "rating": 9.2,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1100000,
+    "price": 110000,
     "playerImg": "https://i.ibb.co.com/YFgg923r/kane-wiiliamson.webp"
   },
   {
@@ -46,7 +46,7 @@
     "rating": 9.6,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "price": 1300000,
+    "price": 130000,
     "playerImg": "https://i.ibb.co.com/b5CtSZK2/rashid-khan-t20-world-cup-2026-102738675-16x9.jpg"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 9.4,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "N/A",
-    "price": 1250000,
+    "price": 125000,
     "playerImg": "https://i.ibb.co.com/BKTpz34h/Jos-Buttler-1.jpg"
   }
 ]

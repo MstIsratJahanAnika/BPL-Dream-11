@@ -1,8 +1,9 @@
+//jeshob players ami choose korte parbo, players er moddhe eta
 // import React from 'react';
 
 import Card from "../../../components/UI/Card";
 
-const AvailablePlayers = ({ players }) => {
+const AvailablePlayers = ({ players, setCoins, coins }) => {
     console.log(players, 'players');
 
     return (
@@ -12,7 +13,7 @@ const AvailablePlayers = ({ players }) => {
                     players.map(player => {
                         console.log(player, 'player'); //individual player pabo 
                         return(
-                            <Card player={player}></Card>
+                            <Card coins={coins} setCoins={setCoins} player={player}></Card>
                         )
                     })
                 }

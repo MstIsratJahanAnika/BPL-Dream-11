@@ -1,10 +1,12 @@
+//all players jekhabe thakbe 
+
 // import React from 'react';
 
 import { use, useState } from "react";
 import AvailablePlayers from "./availablePlayers/AvailablePlayers";
 import SelectedPlayers from "./selectedPlayers/SelectedPlayers";
 
-const Players = ({ playersPromise }) => {
+const Players = ({ playersPromise, setCoins, coins }) => {
     console.log(playersPromise);
 
     const players = use(playersPromise);
@@ -12,6 +14,11 @@ const Players = ({ playersPromise }) => {
 
     const [selectedType, setSelectedType] = useState(true)
     console.log(selectedType, 'selectedType');
+
+    // selected payers ekhan theke handle hobe, all players theke e players selected hobe
+    // all selected players ekta arry
+    const[selectedPlayers, setSelectedPlayers] = useState([]);
+    
     return (
         <div className="container mx-auto my-10">
             {/* Players: {players.length} */}
@@ -37,7 +44,7 @@ const Players = ({ playersPromise }) => {
             {/* eta conditional hobe */}
             {/* <AvailablePlayers players={players} /> */}
 
-            {selectedType ? <AvailablePlayers players={players} /> : <SelectedPlayers />}
+            {selectedType ? <AvailablePlayers coins={coins} setCoins={setCoins} players={players} /> : <SelectedPlayers />}
         </div>
     );
 };
