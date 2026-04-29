@@ -17,7 +17,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1500,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://i.ibb.co.com/ZpRMmXCM/babar-azam.webp"
   },
   {
     "playerName": "Ben Stokes",
@@ -27,7 +27,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 2500,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://i.ibb.co.com/SXgDhzp7/stokesb011201-min.jpg"
   },
   {
     "playerName": "Kane Williamson",
@@ -37,7 +37,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1100000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://i.ibb.co.com/YFgg923r/kane-wiiliamson.webp"
   },
   {
     "playerName": "Rashid Khan",
@@ -47,7 +47,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 1300000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://i.ibb.co.com/b5CtSZK2/rashid-khan-t20-world-cup-2026-102738675-16x9.jpg"
   },
   {
     "playerName": "Jos Buttler",
@@ -57,6 +57,6 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "N/A",
     "price": 1250000,
-    "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
+    "playerImg": "https://i.ibb.co.com/BKTpz34h/Jos-Buttler-1.jpg"
   }
 ]

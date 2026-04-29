@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
             {/* navbar */}
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 shadow-sm container mx-auto">
                 <div className="flex-1">
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                 </div>
